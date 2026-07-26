@@ -98,7 +98,7 @@ const AddBookForm = () =>{
             <input 
             type="text" 
             name="language"
-            value={formData.genre}
+            value={formData.language}
             onChange={handleChange}
             />
             <br />
