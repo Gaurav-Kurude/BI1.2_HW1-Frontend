@@ -18,7 +18,10 @@ const Books = () => {
            {data?.length ? (
                <ul>
                   {data.map((book) => (
-                   <li key={book._id ?? book.title}>{book.title}</li>
+                   <li key={book._id ?? book.title}>
+                     <p>{book.title}</p>
+                     <p>{book.author}</p>
+                  </li>
             ))}
                </ul>
             ) : (
