@@ -24,6 +24,7 @@ const AddBookForm = () =>{
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        console.log("Form Data:", formData);
         try{
             const response = await fetch("https://bi-1-2-hw-1-backend.vercel.app/books",
                 {
