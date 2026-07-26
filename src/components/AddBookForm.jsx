@@ -5,7 +5,7 @@ const AddBookForm = () =>{
         title: "",
         author: "",
         publishedYear: "",
-        genre: "",
+        genre: [],
         language: "",
         country: "",
         rating: "",
@@ -18,7 +18,7 @@ const AddBookForm = () =>{
         setFormData((prevState) => ({
             ...prevState,
             [name]:
-            name === "publishedYear" || name === "rating" ? parseInt(value) : value
+            name === "publishedYear" || name === "rating" ? parseInt(value) : name === "genre" ? value.split(",").map((item) => item.trim()) : value,
         }))
     }
 
