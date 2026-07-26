@@ -2,7 +2,7 @@ import useFetch from "../hooks/useFetch";
 
 const Books = () => {
 
-  const { data, loading , error } = useFetch("");
+  const { data, loading , error } = useFetch("https://bi-1-2-hw-1-backend.vercel.app/books");
     // console.log(data)
 
   if (loading) {
@@ -15,15 +15,15 @@ const Books = () => {
 
   return(
     <div>
-     {data.length ? (
-     <ul>
-        {data.map((book) => (
-           <li key={book._id}>{book.title}</li>
-        ))}
-     </ul>
-    ) : (
-      <p>No books found.</p>
-     )}
+           {data?.length ? (
+               <ul>
+                  {data.map((book) => (
+                   <li key={book._id ?? book.title}>{book.title}</li>
+            ))}
+               </ul>
+            ) : (
+                   <p>No books found.</p>
+                )}
    </div>
     )
 };
