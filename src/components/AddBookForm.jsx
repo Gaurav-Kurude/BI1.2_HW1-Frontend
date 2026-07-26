@@ -41,7 +41,7 @@ const AddBookForm = () =>{
 
             const data = await response.json()
 
-            console.log("Added Book", data)
+            console.log("Added Book:", data)
 
         } catch (error){
             console.log(error)
