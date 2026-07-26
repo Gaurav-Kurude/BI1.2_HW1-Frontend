@@ -102,6 +102,7 @@ const AddBookForm = () =>{
             onChange={handleChange}
             />
             <br />
+            <br />
             <label>Country: </label>
             <br />
             <input 
@@ -130,6 +131,7 @@ const AddBookForm = () =>{
             value={formData.summary}
             onChange={handleChange}
             />
+            <br />
             <br />
             <label>Cover Image URL: </label>
             <br />
