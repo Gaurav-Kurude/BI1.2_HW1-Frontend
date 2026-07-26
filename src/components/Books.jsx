@@ -17,17 +17,18 @@ const Books = () => {
     <div>
            {data?.length ? (
                <ul>
+                <h2>List Of Books</h2>
                   {data.map((book) => (
                    <li key={book._id ?? book.title}>
-                     <p>{book.title}</p>
-                     <p>{book.author}</p>
-                     <p>{book.publishedYear}</p>
-                     <p>{book.genre}</p>
-                     <p>{book.language}</p>
-                     <p>{book.country}</p>
-                     <p>{book.rating}</p>
-                     <p>{book.summary}</p>
-                     <p>{book.coverImageUrl}</p>
+                     <h3>{book.title}</h3>
+                     <p>Author: {book.author}</p>
+                     <p>Published Year: {book.publishedYear}</p>
+                     <p>Genre: {book.genre}</p>
+                     <p>Language: {book.language}</p>
+                     <p>Country: {book.country}</p>
+                     <p>Rating: {book.rating}</p>
+                     <p>Summary: {book.summary}</p>
+                     <p>Image: {book.coverImageUrl}</p>
                   </li>
             ))}
                </ul>
