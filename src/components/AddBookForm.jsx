@@ -89,7 +89,7 @@ const AddBookForm = () =>{
             <input 
             type="text" 
             name="genre"
-            value={formData.genre.join(", ")}
+            value={formData.genre}
             onChange={handleChange}
             />
             <br />

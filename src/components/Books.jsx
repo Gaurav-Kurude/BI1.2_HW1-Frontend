@@ -23,7 +23,7 @@ const Books = () => {
                      <h3>{book.title}</h3>
                      <p>Author: {book.author}</p>
                      <p>Published Year: {book.publishedYear}</p>
-                     <p>Genre: {book.genre}</p>
+                     <p>Genre: {book.genre.join(", ")}</p>
                      <p>Language: {book.language}</p>
                      <p>Country: {book.country}</p>
                      <p>Rating: {book.rating}</p>
